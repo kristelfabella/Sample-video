@@ -10,10 +10,10 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --accent: #5de65e;
-    --accent-hover: #4bc94c;
-    --accent-dim: rgba(93,230,94,0.18);
-    --accent-glow: rgba(93,230,94,0.40);
+    --accent: #0198c6;
+    --accent-hover: #0180a8;
+    --accent-dim: rgba(1,152,198,0.18);
+    --accent-glow: rgba(1,152,198,0.40);
     --black: #07061a;
     --white: #ffffff;
     --white-80: rgba(255,255,255,0.80);
@@ -113,7 +113,7 @@
   }
 
   .video-card.active {
-    box-shadow: 0 0 30px rgba(93,230,94,0.15);
+    box-shadow: 0 0 30px rgba(1,152,198,0.15);
   }
 
   .video-player {
@@ -152,7 +152,7 @@
     width: clamp(64px, 10vw, 88px);
     height: clamp(64px, 10vw, 88px);
     border-radius: 50%;
-    background: rgba(93,230,94,0.9);
+    background: rgba(1,152,198,0.9);
     border: 2px solid rgba(255,255,255,0.2);
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@
   .play-button:hover {
     background: var(--accent);
     transform: scale(1.08);
-    box-shadow: 0 0 30px rgba(93,230,94,0.5);
+    box-shadow: 0 0 30px rgba(1,152,198,0.5);
   }
 
   .play-button svg {
@@ -197,7 +197,7 @@
   .video-error-msg svg {
     width: 32px;
     height: 32px;
-    fill: rgba(93,230,94,0.5);
+    fill: rgba(1,152,198,0.5);
     margin-bottom: 4px;
   }
 
@@ -428,13 +428,13 @@
   }
 
   .thumbnail:hover {
-    border-color: rgba(93,230,94,0.4);
+    border-color: rgba(1,152,198,0.4);
     transform: translateY(-2px) scale(1.05);
   }
 
   .thumbnail.active {
     border-color: var(--accent);
-    box-shadow: 0 0 12px rgba(93,230,94,0.3);
+    box-shadow: 0 0 12px rgba(1,152,198,0.3);
   }
 
   .thumbnail.visited::after {
@@ -466,7 +466,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(93,230,94,0.12);
+    background: rgba(1,152,198,0.12);
     color: var(--white-20);
     font-size: clamp(0.6rem, 1.2vw, 0.75rem);
     font-weight: 600;
@@ -499,7 +499,7 @@
     transition: all 0.3s ease;
   }
 
-  .dot:hover { background: rgba(93,230,94,0.5); }
+  .dot:hover { background: rgba(1,152,198,0.5); }
 
   .dot.active {
     background: var(--accent);
@@ -508,7 +508,7 @@
     box-shadow: 0 0 8px var(--accent-glow);
   }
 
-  .dot.watched { background: rgba(93,230,94,0.5); }
+  .dot.watched { background: rgba(1,152,198,0.5); }
 
   .footer {
     flex-shrink: 0;
@@ -550,7 +550,7 @@
     z-index: 1000;
     max-width: 220px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 0 12px rgba(93,230,94,0.2);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3), 0 0 12px rgba(1,152,198,0.2);
   }
 
   .tooltip.visible { opacity: 1; }
@@ -569,7 +569,7 @@
     z-index: 50;
     max-width: 220px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4), 0 0 16px rgba(93,230,94,0.2);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4), 0 0 16px rgba(1,152,198,0.2);
     line-height: 1.45;
     transform: scale(0.95);
   }
@@ -859,18 +859,19 @@
   //
   // ============================================================
 
- const VIDEOS = [
-  {
-    videoUrl:  "https://kristelfabella.github.io/Sample-video/video-31.mp4",
-    posterUrl: "https://kristelfabella.github.io/Sample-video/video-31.png",
-    duration:  "0:00"
-  },
-  {
-    videoUrl:  "https://kristelfabella.github.io/Sample-video/video-32.mp4",
-    posterUrl: "https://kristelfabella.github.io/Sample-video/video-32.png",
-    duration:  "0:00"
-  }
-];
+  const VIDEOS = [
+    {
+      videoUrl:  "https://raw.githubusercontent.com/gilbertrskye-coder/-axcelerate-videos-carousel/main/video-03.mp4",
+      posterUrl: "https://raw.githubusercontent.com/gilbertrskye-coder/-axcelerate-videos-carousel/main/video-03.png",
+      duration:  "0:00"
+    },
+    {
+      videoUrl:  "https://raw.githubusercontent.com/gilbertrskye-coder/-axcelerate-videos-carousel/main/video-04.mp4",
+      posterUrl: "https://raw.githubusercontent.com/gilbertrskye-coder/-axcelerate-videos-carousel/main/video-04.png",
+      duration:  "0:00"
+    }
+  ];
+
   // ============================================================
   // Instruction messages
   // ============================================================
